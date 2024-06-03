@@ -26,3 +26,14 @@ Por exemplo, pedindo para exibir o valor da variável abaixo, o resultado seria 
 
 Já desta aqui, seria 1111:
 `concatenacao = 1+"1"+1+1;`
+
+## Operador ternário
+
+O operador ternário é um operador bastante único, e é representado pelos símbolos `?:`
+
+Basicamente, ele funciona como um if-else de uma linha só, seguindo esta estrutura abaixo:
+`<Expressão Condicional> ? <Caso condição seja true> : <Caso condição seja false>`
+
+Um exemplo seria:
+`valor1 && valor2 ? "Condição verdadeira" : "Condição falsa";`
+
