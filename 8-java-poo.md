@@ -18,3 +18,60 @@ Além disso, um objeto também possui **comportamentos** (métodos), que represe
 
 Concluindo, também temos a ideia de **instância**. Basicamente, toda vez que um novo objeto é criado, falamos que uma nova instância daquela classe (que molda o objeto) está sendo criada.
 
+## Exemplo em Java
+
+```
+// Criando a classe Student  
+// Com todas as características e compartamentos aplicados
+
+public class Student {
+    String name;
+    int age;
+    Color color;
+    Sex sex;
+
+    void eating(Lunch lunch){
+      //NOSSO CÓDIGO AQUI
+    }
+    void drinking(Juice juice){
+      //NOSSO CÓDIGO AQUI
+    }
+    void running(){
+      //NOSSO CÓDIGO AQUI
+    }
+}
+```
+
+```
+// Criando objetos a partir da classe Student
+
+public class School {
+    public static void main(String[] args) throws Exception {
+      Student student1 = new Student();
+      student1.name= "John";
+      student1.age= 12;
+      student1.color= Color.FAIR;
+      student1.sex= Sex.MALE;
+
+      Student student2 = new Student();
+      student2.name= "Sophia";
+      student2.age= 10;
+      student2.color= Color.FAIR;
+      student2.sex= Sex.FEMALE;
+
+      Student student3 = new Student();
+      student3.name= "Lily";
+      student3.age= 11;
+      student3.color= Color.DARK;
+      student3.sex= Sex.FEMALE;
+    }
+}
+```
+
+## Organizando classes
+
+Por convenção, as classes costumam ser oganizadas em:
+- **Classes de modelo**: São as classes dos atores/participantes da aplicação (exemplo: Empresa, Cliente, NotaFiscal, etc);
+- **Classes de serviço**: São as classes que contém a lógica de negócio da aplicação (exemplo: VeiculoService, ClienteService, etc);
+- **Classes de repositório**: São as classes de integração com o banco de dados;
+- **Classes de utilidade**: São as classes que contém ferramentas utilizadas por toda a aplicação (exemplo: FormatadorCepUtil, FormatadorCpfUtil, etc).
